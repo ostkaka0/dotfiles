@@ -1,0 +1,112 @@
+theme = "carbonfox"
+# theme = "jellybeans"#"monokai_pro_spectrum"
+#jellybeans
+#monokai_pro_spectrum
+#snazzy
+
+
+[editor]
+text-width = 80
+line-number = "relative"
+#display-signature-help-docs = false
+auto-completion = false
+scroll-lines = 10
+# tab-width = 2
+# expand-tabs = true
+# detect-indent = false
+
+[editor.soft-wrap]
+enable = true
+#max-wrap = 20
+wrap-at-text-width = true
+
+[editor.indent-guides]
+render = true
+character = "│"
+
+[keys.normal]
+"~" = "normal_mode"
+
+#"h" = "move_char_left"
+#"t" = "move_visual_line_down"
+#"n" = "move_visual_line_up"
+#"s" = "move_char_right"
+#"T" = "goto_next_paragraph"
+#"N" = "goto_prev_paragraph"
+#"H" = "move_prev_word_start"
+#"S" = "move_next_word_end"
+# "C-t" = "goto_next_paragraph" #} better
+# "C-n" = "goto_prev_paragraph" #{ better
+# "C-h" = "move_prev_word_start" #( better
+# "C-s" = "move_next_word_end" #) better
+"C-up"    = "@T{" #"goto_prev_paragraph"
+"C-down"  = "@t}" #"goto_next_paragraph"
+"C-left"  = "move_prev_word_start"
+"C-right" = "move_next_word_end"
+"{"       = "@F{" #"goto_prev_paragraph"
+"}"       = "@f}" #"goto_next_paragraph"
+"("       = "@F(" #"goto_prev_paragraph"
+")"       = "@f)" #"goto_next_paragraph"
+
+
+
+
+
+[keys.insert]
+#"~" = "normal_mode"
+"§" = "normal_mode"
+
+# "C-t" = "goto_next_paragraph"
+# "C-n" = "goto_prev_paragraph"
+# "C-h" = "move_prev_word_start"
+# "C-s" = "move_next_word_end"
+"C-up" = "goto_prev_paragraph"
+"C-down" = "goto_next_paragraph"
+"C-left" = "move_prev_word_start"
+"C-right" = "move_next_word_end"
+
+
+"C-z" = "undo"
+"C-y" = "redo"
+
+
+
+[keys.select]
+"§" = "normal_mode"
+
+#"h" = "move_char_left"
+#"t" = "move_visual_line_down"
+#"n" = "move_visual_line_up"
+#"s" = "move_char_right"
+#"T" = "goto_next_paragraph"
+#"N" = "goto_prev_paragraph"
+#"H" = "move_prev_word_start"
+#"S" = "move_next_word_end"
+# "C-t" = "goto_next_paragraph"
+# "C-n" = "goto_prev_paragraph"
+# "C-h" = "move_prev_word_start"
+# "C-s" = "move_next_word_end"
+"C-up" = "goto_prev_paragraph"
+"C-down" = "goto_next_paragraph"
+"C-left" = "move_prev_word_start"
+"C-right" = "move_next_word_end"
+"{" = "goto_prev_paragraph"
+"}" = "goto_next_paragraph"
+"(" = "goto_prev_paragraph"
+")" = "goto_next_paragraph"
+
+
+# overwritten:
+#"t" = "find_till_char"
+#"T" = "till_prev_char"
+#"s" = "select_regex"
+#"S" = "split_selection"
+
+#old:
+#"C-k" = "goto_prev_paragraph"
+#"C-j" = "goto_next_paragraph"
+#"C-h" = "move_prev_word_start"
+#"C-l" = "move_next_word_end"
+
+
+
