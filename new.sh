@@ -17,5 +17,8 @@ fi
 if [[ $1 == *.sh ]]; then
 	output="# © $year_str John Emanuelsson\n# File created $date_str\n"
 fi
+if [[ $1 == *.lua ]]; then
+	output="-- © $year_str John Emanuelsson\n-- File created $date_str\n"
+fi
 
 echo -e $output > $1

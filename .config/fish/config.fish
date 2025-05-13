@@ -25,7 +25,23 @@ if status is-interactive
     # end
     set -x PATH $HOME/.ghcup/bin $PATH
     # set -x PATH $HOME/.ghcup/bin $PATH
+    # eval $(ssh-agent -c) >/dev/null
+    # ssh-add ~/.ssh/{john-key}
+    # keychain --eval ~/.ssh/{john-key}; and source (keychain --eval ~/.ssh/{john-key} | grep -o '.*\.sh')
+    # keychain --eval ~/.ssh/{john-key}; and source (keychain --eval ~/.ssh/{john-key} | grep -o '.*\.sh')
+
 end
+
+# if not set -q SSH_AUTH_SOCk
+#     keychain --eval --agents ssh
+#     ssh-add -l >/dev/null || ssh-add ~/.ssh/id_rsa
+# end
+
+# eval "$(ssh-agent)" >/dev/null
+# if not set -q SSH_AGENT_PID
+#     set agent_output (ssh-agent -c)
+
+# end
 
 set GNUMAKEFLAGS -j23
 set MAKEFLAGS -j 23
@@ -66,3 +82,6 @@ magic completion --shell fish | source
 # This section can be safely removed at any time if needed.
 test -r '/home/ost/.opam/opam-init/init.fish' && source '/home/ost/.opam/opam-init/init.fish' >/dev/null 2>/dev/null; or true
 # END opam configuration
+
+# ssh
+# eval $(ssh-agenti -s)

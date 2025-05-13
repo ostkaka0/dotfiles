@@ -32,6 +32,9 @@ a#uto-format = true
 name = "python"
 indent = {tab-width = 2, unit = " "}
 [[language]]
+name = "py"
+indent = {tab-width = 2, unit = " "}
+[[language]]
 name = "glsl"
 indent = {tab-width = 2, unit = " "}
 scope = "source.glsl"
