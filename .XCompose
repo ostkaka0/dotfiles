@@ -1,0 +1,154 @@
+include "%L"
+<Multi_key> <Shift_L> <space> : "_"
+<Multi_key> <Shift_R> <space> : "_"
+
+<Multi_key> <X> <O> <R> : "⊻"
+<Multi_key> <A> <N> <D> : "∧"
+<Multi_key> <O> <R> : "∨"
+<Multi_key> <N> <O> <T> : "¬"
+
+<Multi_key> <minus> <plus> : "∓"
+<Multi_key> <A> <A> : "∀"
+<Multi_key> <E> <E> : "∃"
+<Multi_key> <E> <N> <E> : "∄"
+<Multi_key> <asterisk> <asterisk> : "⋅"
+<Multi_key> <x> <x> : "×"
+
+<Multi_key> <s> <q>                  : "√"
+<Multi_key> <2> <r> <t>              : "√"
+<Multi_key> <3> <r> <t>              : "∛"
+<Multi_key> <4> <r> <t>              : "∜"
+
+#<Multi_key> <Multi_key> <S> <u> <m>             : "∑"
+#<Multi_key> <Multi_key> <P> <r> <o> <d>         : "∏"
+<Multi_key> <Multi_key> <I> <n> <t>             : "∫"
+
+## Copied from https://gist.github.com/pkgw/5422749
+# PKGW customizations
+# Greek ambiguities: epsilon/eta, theta/tau, pi/phi/psi, omega/omicron
+
+<Multi_key> <backslash> <comma> : " " U202F # thin nonbreaking space
+
+<Multi_key> <m> <t> <r> <i> : "△"
+<Multi_key> <m> <d> <e> <l> : "∇"
+<Multi_key> <m> <a> <l> <e> <p> <h> : "ℵ"
+<Multi_key> <parenleft> <plus> <parenright> : "⊕"
+<Multi_key> <parenleft> <minus> <parenright> : "⊝"
+<Multi_key> <parenleft> <minus> <minus> <parenright> : "⊖"
+<Multi_key> <parenleft> <asterisk> <parenright> : "⊛"
+<Multi_key> <parenleft> <period> <parenright> : "⊙"
+#<Multi_key> <parenleft> <backslash> <parenright> : "⊘"
+<Multi_key> <parenleft> <o> <equal> <parenright> : "⊚"
+
+<Multi_key> <m> <Right>    : "⃗" # combining vector arrow
+<Multi_key> <Q> <E> <D>        :  "∎"
+
+
+<Multi_key> <g> <a> : "α"
+<Multi_key> <g> <b> : "β"
+<Multi_key> <g> <g> : "γ"
+<Multi_key> <g> <G> : "Γ"
+<Multi_key> <g> <d> : "δ"
+<Multi_key> <g> <D> : "Δ"
+<Multi_key> <g> <3> : "ε" # note! 
+<Multi_key> <g> <z> : "ζ"
+<Multi_key> <g> <e> : "η"
+<Multi_key> <g> <h> : "θ" # note!
+<Multi_key> <g> <H> : "Θ"
+<Multi_key> <g> <i> : "ι"
+<Multi_key> <g> <k> : "κ"
+<Multi_key> <g> <l> : "λ"
+<Multi_key> <g> <L> : "Λ"
+<Multi_key> <g> <m> : "μ"
+<Multi_key> <g> <n> : "ν"
+<Multi_key> <g> <x> : "ξ"
+<Multi_key> <g> <X> : "Ξ"
+# note: no omicron
+<Multi_key> <g> <p> : "π"
+<Multi_key> <g> <r> : "ρ"
+<Multi_key> <g> <s> : "σ"
+<Multi_key> <g> <t> : "τ"
+<Multi_key> <g> <T> : "Τ"
+<Multi_key> <g> <u> : "ψ"
+<Multi_key> <g> <f> : "φ" # note!
+<Multi_key> <g> <c> : "χ"
+<Multi_key> <g> <o> : "ω"
+
+<Multi_key> <g> <P> : "Π"
+<Multi_key> <g> <S> : "Σ"
+<Multi_key> <g> <F> : "Φ"
+<Multi_key> <g> <U> : "Ψ"
+<Multi_key> <g> <O> : "Ω"
+
+<Multi_key> <bar> <A> : "𝔸"
+<Multi_key> <B> <B> : "𝔹"
+<Multi_key> <B> <C> : "ℂ"
+<Multi_key> <B> <D> : "𝔻"
+<Multi_key> <B> <E> : "𝔼"
+<Multi_key> <B> <F> : "𝔽"
+<Multi_key> <B> <G> : "𝔾"
+<Multi_key> <B> <H> : "ℍ"
+<Multi_key> <B> <I> : "𝕀"
+<Multi_key> <B> <J> : "𝕁"
+<Multi_key> <B> <K> : "𝕂"
+<Multi_key> <B> <L> : "𝕃"
+<Multi_key> <B> <M> : "𝕄"
+<Multi_key> <B> <N> : "ℕ"
+<Multi_key> <B> <O> : "𝕆"
+<Multi_key> <B> <P> : "ℙ"
+<Multi_key> <B> <Q> : "ℚ"
+<Multi_key> <B> <R> : "ℝ"
+<Multi_key> <B> <S> : "𝕊"
+<Multi_key> <B> <T> : "𝕋"
+<Multi_key> <B> <U> : "𝕌"
+<Multi_key> <B> <V> : "𝕍"
+<Multi_key> <B> <W> : "𝕎"
+<Multi_key> <B> <X> : "𝕏"
+<Multi_key> <B> <Y> : "𝕐"
+<Multi_key> <B> <Z> : "ℤ"
+
+
+# From https://gist.github.com/bcmills/72a312d40061dc5ec715742319922dc5
+# Subscript
+<Multi_key> <underscore> <0>:                        U2080
+<Multi_key> <underscore> <1>:                        U2081
+<Multi_key> <onesuperior>:                     U2081
+<Multi_key> <underscore> <2>:                        U2082
+<Multi_key> <twosuperior>:                     U2082
+<Multi_key> <underscore> <3>:                        U2083
+<Multi_key> <threesuperior>:                   U2083
+<Multi_key> <underscore> <4>:                        U2084
+<Multi_key> <underscore> <5>:                        U2085
+<Multi_key> <underscore> <6>:                        U2086
+<Multi_key> <underscore> <7>:                        U2087
+<Multi_key> <underscore> <8>:                        U2088
+<Multi_key> <underscore> <9>:                        U2089
+<Multi_key> <underscore> <plus>:                     U208A
+<Multi_key> <underscore> <minus>:                    U208B
+<Multi_key> <underscore> <parenleft>:                U208D
+<Multi_key> <underscore> <parenright>:               U208E
+<Multi_key> <underscore> <asciicircum>:              U2038 # CARET
+<Multi_key> <underscore> <x>:                        U2093
+<Multi_key> <underscore> <h>:                        U2095
+<Multi_key> <underscore> <i>:                        U1D62
+<Multi_key> <underscore> <j>:                        U2C7C
+<Multi_key> <underscore> <k>:                        U2096
+<Multi_key> <underscore> <l>:                        U2097
+<Multi_key> <underscore> <m>:                        U2098
+<Multi_key> <underscore> <n>:                        U2099
+<Multi_key> <underscore> <p>:                        U209A
+<Multi_key> <underscore> <s>:                        U209B
+<Multi_key> <underscore> <t>:                        U209C
+
+<Multi_key> <parenleft> <parenleft>  : "⸨"
+<Multi_key> <parenright> <parenright>: "⸩"
+<Multi_key> <bracketleft> <bracketleft>  : "⸨"
+<Multi_key> <bracketright> <bracketright>: "⸩"
+# <Multi_key> <braceleft> <braceleft>  : "⸨"
+# <Multi_key> <braceright> <braceright>: "⸩"
+<Multi_key> <parenleft> <parenleft>  : "⸨"
+<Multi_key> <parenright> <parenright>: "⸩"
+
+
+<Multi_key> <braceleft> <braceleft>   : "⎰"
+<Multi_key> <braceright> <braceright> : "⎱"
