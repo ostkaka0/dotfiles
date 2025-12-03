@@ -44,8 +44,22 @@ alias split_h="~/scripts/split_h.sh"
 alias py=python
 alias lpoweroff="loginctl poweroff"
 alias lreboot="loginctl reboot"
+alias lct="~/git/lua_code_tool/lua_code_tool.lua"
 
 
 
 GNUMAKEFLAGS="-j23"
 MAKEFLAGS="-j23"
+
+
+# Gurobi
+export GUROBI_HOME="/home/ost/Downloads/gurobi1202/linux64"
+export PATH="/home/ost/Downloads/gurobi1202/linux64/bin:$PATH"
+export LD_LIBRARY_PATH="/home/ost/Downloads/gurobi1202/linux64/lib:$LD_LIBRARY_PATH"
+
+
+# #dpcpp
+# source /opt/intel/oneapi/setvars.sh
+
+# Lua
+export LUA_PATH="$HOME/git/lua_code_tool/?.lua;;"
