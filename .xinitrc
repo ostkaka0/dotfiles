@@ -1,3 +1,8 @@
+# if [ ! "$DBUS_SESSION_BUS_ADDRESS" ]; then
+#     eval "$(dbus-launch --sh-syntax --exit-with-x11)"
+# fi
+
+
 # xset r rate 150 100
 # setxkbmap se -option caps:swapescape -option compose:menu -variant nodeadkeys -device 14
 setxkbmap se dvorak -device 22
