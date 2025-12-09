@@ -57,6 +57,9 @@ export GUROBI_HOME="/home/ost/Downloads/gurobi1202/linux64"
 export PATH="/home/ost/Downloads/gurobi1202/linux64/bin:$PATH"
 export LD_LIBRARY_PATH="/home/ost/Downloads/gurobi1202/linux64/lib:$LD_LIBRARY_PATH"
 
+# Emscripten
+export PATH="/usr/lib/emscripten:$PATH"
+
 
 # #dpcpp
 # source /opt/intel/oneapi/setvars.sh
