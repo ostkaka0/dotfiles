@@ -13,8 +13,8 @@ readonly BACKUP_PATH="${DST_DIR}/${DATETIME}"
 readonly LATEST="${DST_DIR}/LATEST"
 readonly LATEST_TMP="${DST_DIR}/LATEST_TMP"
 
-readonly WEEKDAY="${DST_DIR}/$(date '+%a')"
-readonly MONTH="${DST_DIR}/$(date '+%b')"
+readonly WEEKDAY="${DST_DIR}/$(LC_TIME=en_US.UTF-8 date '+%a')"
+readonly MONTH="${DST_DIR}/$(LC_TIME=en_US.UTF-8 date '+%b')"
 readonly YEAR="${DST_DIR}/$(date '+%Y')"
 
 echo "SRC_DIR:     $SRC_DIR"
@@ -28,6 +28,7 @@ echo "YEAR:        $YEAR"
 mount /dev/sdb2 /mnt/LINUX_BACKUP
 if [ ! -d $DST_DIR ]; then
   echo "ERROR: /mnt/LINUX_BACKUP/home_backup not found!"
+  # umount -f /mnt/LINUX_BACKUP
   exit 1
 fi
 
@@ -76,4 +77,4 @@ while IFS= read -r LINE; do
     rm -rf "${LINE}"
 done <<< "$DIR_LIST"
 
-
+# umount -f /mnt/LINUX_BACKUP # Doesn't work for some reason

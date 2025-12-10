@@ -6,6 +6,7 @@ theme = "carbonfox"
 
 
 [editor]
+auto-format = false
 text-width = 80
 line-number = "relative"
 #display-signature-help-docs = false

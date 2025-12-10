@@ -50,6 +50,7 @@ include "%L"
 <Multi_key> <g> <G> : "Γ"
 <Multi_key> <g> <d> : "δ"
 <Multi_key> <g> <D> : "Δ"
+<Multi_key> <g> <6> : "∂"
 <Multi_key> <g> <3> : "ε" # note! 
 <Multi_key> <g> <z> : "ζ"
 <Multi_key> <g> <e> : "η"

@@ -1,4 +1,6 @@
 .cache/
+.local/share/Trash/
+.local/share/Mousepad/
 .npm/
 .dbus/
 Downloads/
@@ -15,6 +17,11 @@ libs/
 .mozilla/firefox/*.default-release/storage/
 .mozilla/firefox/*.default-release/crashes/
 .config/doomseeker/
+.local/share/doomseeker/
+apps/zandronum-stable/.hg/store/
+apps/zandronum-stable/.hg/cache/
+apps/zandronum-stable/.hg/cache/
+apps/zandronum-stable/buildclient/
 .config/chromium/
 .config/Atom/
 .config/opera/
@@ -60,6 +67,10 @@ apps/ComfyUI/comfypy/
 .local/share/atlauncher/instances/
 .local/share/atlauncher/downloads/
 git/ml/outputs/
+git/ml/venv/
+apps/ComfyUI/venv/
+code/tinygrad/venv/
+git/llvm-project/
 .cargo/
 .ghc/
 .ghcup/
