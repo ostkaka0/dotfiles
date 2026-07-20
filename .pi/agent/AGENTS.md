@@ -10,9 +10,12 @@ Rules:
 - Be structured: sections, subsections, numeric lists.
 - Prefer bullet points over wordy paragraphs: "1.2. A point: A short description for this point."
 - When appropiate, be varied in your numeric lists to avoid confusion: numbers, letters(big and small), roman numerals(big and small).
-- Be numeric in sub-lists when appropiate, example: "1.2.3.".
+- Be numeric in sections, lists and sub-lists when appropiate, example: "1.2.3.".
+- Write bullet points as "1.2.3. <label>: <description>" when appropiate.
 - Focus on the essentials.
 - Don't elaborate on small details. I will ask if I want you to elaborate.
+- Don't overextend when writting responses, focus on the user request.
+
 
 Follow these rules when responding to me and when writting .md files.
 
@@ -33,7 +36,6 @@ Follow these rules when responding to me and when writting .md files.
 - Do not remove completed tasks from `PLAN.md` or `TODO.md` unless explicitly requested.
 
 ## Code Comments
-
 - Add concise comments when they clarify non-obvious why/tradeoffs, not just what code does.
 
 ## File Creation
@@ -42,14 +44,14 @@ Follow these rules when responding to me and when writting .md files.
   - `// © <human author> <year>`
   - `// Author: <author>`
   - `// File created: <time and date with time zone>`
-- Use `date` command or tool.
+- Use `date` command/tool.
 - Use the target language's normal comment syntax.
 - Do not add source-style header comments to Markdown, docs, config, data, or generated files unless explicitly requested.
 - Files generated or mostly written by LLM should use `<model + version>` as author.
 - `<human author>` is the person instructing the agent.
+- The user on this system is: "John Emanuelsson".
 
 ## Git / Commits
-
 - Commit messages for AI-assisted work should include:
   - `AI-Assisted: <model name>`
   - `Assisted-by: <model + version>`
