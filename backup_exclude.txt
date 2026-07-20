@@ -1,6 +1,15 @@
+.factorio
+
+
 .cache/
 .local/share/Trash/
 .local/share/Mousepad/
+.local/share/flatpak/repo
+.local/share/umu
+.local/share/flatpak/
+site-packages/
+.icons/
+.themes/
 .npm/
 .dbus/
 Downloads/
@@ -38,6 +47,7 @@ external/
 .git/
 .MathWorks/
 MATLAB/
+
 
 VirtualBox VMs/
 .config/doomseeker/
@@ -88,3 +98,8 @@ Cache/
 Code Cache/
 /venv/
 /envs/
+.factorio/mods/
+.eclipse
+.debug/jit/
+
+.ollama
