@@ -85,3 +85,7 @@ test -r '/home/ost/.opam/opam-init/init.fish' && source '/home/ost/.opam/opam-in
 
 # ssh
 # eval $(ssh-agenti -s)
+
+
+# .local/bin
+set -gx PATH "/home/ost/.local/bin" $PATH
