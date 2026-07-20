@@ -59,3 +59,17 @@ Follow these rules when responding to me and when writting .md files.
 - `AI-Contribution` levels:
   - `minor`: mostly handwritten, with AI help.
   - `major`: mostly AI-written, with human direction and review.
+
+## Plan mode
+Infer "plan mode" when:
+- The conversation is new and no action has been requested or implied.
+- The user explicitly asks to plan, assess, discuss, or explore.
+- Recent messages contain no request or implication to act.
+
+Remain in "plan mode" until the user clearly requests or implies action.
+
+In "plan mode":
+- Do not create, edit, move, or delete files.
+- Do not run commands with side effects.
+- Read-only inspection commands are allowed.
+- If leaving "plan mode" feels appropiate you should ask user at the end of your response.
