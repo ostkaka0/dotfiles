@@ -1,0 +1,94 @@
+{
+  "permissionReviewLog": true,
+  "yoloMode": false,
+  "permission": {
+    "*": "ask",
+
+    "hypa_shell": "deny",
+
+    "path": {
+      "*": "allow",
+      "~/.agents/": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow",
+      "~/.ssh/*": "deny",
+      "~/.gnupg/*": "deny",
+      "~/.aws/*": "deny",
+      "*.pem": "deny"
+    },
+
+    "read": "allow",
+    "grep": "allow",
+    "find": "allow",
+    "ls": "allow",
+
+    "write": "ask",
+    "edit": "ask",
+
+    "lsp_diagnostics": "allow",
+
+    "ask_user_question": "allow",
+
+    "bash": {
+      "*": "ask",
+
+      "hypa *": "allow",
+
+      "pwd *": "allow",
+      "whoami *": "allow",
+      "id *": "allow",
+      "uname *": "allow",
+      "date *": "allow",
+      "time *": "allow",
+      "uptime *": "allow",
+      "which *": "allow",
+      "command -v": "allow",
+
+      "find *": "allow",
+      "grep *": "allow",
+      "ls *": "allow",
+      "cat *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "wc *": "allow",
+      "stat *": "allow",
+      "file *": "allow",
+      "du *": "allow",
+      "df *": "allow",
+      "sort *": "allow",
+      
+      "touch *": "allow",
+      "mkdir *": "allow",
+
+      "echo *": "allow",
+      "printf *": "allow",
+
+      "git status *": "allow",
+      "git diff *": "allow",
+      "git log *": "allow",
+      "git show *": "allow",
+      "git branch --show-current": "allow",
+      "git rev-parse *": "allow",
+      "git ls-files *": "allow",
+      "git remote -v": "allow",
+      "git add *": "allow",
+
+      "cmake *": "allow",
+      "ninja *": "allow",
+      "make *": "allow",
+      "ctest *": "allow",
+      
+      "cd *": "deny",
+
+      "rm *": "deny",
+      "sudo *": "deny",
+      "su *": "deny",
+      "ln *": "deny",
+      
+      "*>*": "deny"
+    },
+
+    "external_directory": "ask"
+  }
+}
