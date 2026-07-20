@@ -1,1 +1,21 @@
 .dotfiles
+/*/
+
+# Allowed directories
+!/.config/
+!/scripts/
+!/install_scripts/
+
+# Browsers
+/.config/BraveSoftware/
+/.config/chromium/
+/.config/epiphany/
+
+# Files at ~/ to ignore
+/.git-credentials
+/.bash_history
+/.histfile
+/.zcompdump*
+/.viminfo
+/.wget-hsts
+/nohup.out
