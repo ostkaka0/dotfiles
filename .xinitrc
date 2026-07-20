@@ -12,6 +12,7 @@ setxkbmap se -option caps:swapescape -option compose:menu -variant nodeadkeys
 #sleep 0.5 &
 #wireplumber &
 #exec startxfce4
+# yeetmousectl apply /etc/yeetmouse.conf
 /home/ost/keyboard.sh
 /home/ost/scripts/pipewire.sh &
     openbox-session

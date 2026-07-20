@@ -45,12 +45,17 @@ alias py=python
 alias lpoweroff="loginctl poweroff"
 alias lreboot="loginctl reboot"
 alias lct="~/git/lua_code_tool/lua_code_tool.lua"
+alias gitea_create="~/scripts/gitea_create"
+alias code="helix"
+alias vscode="/bin/code"
 
 
 
 GNUMAKEFLAGS="-j23"
 MAKEFLAGS="-j23"
 
+# .local/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 # Gurobi
 export GUROBI_HOME="/home/ost/Downloads/gurobi1202/linux64"
@@ -66,3 +71,12 @@ export PATH="/usr/lib/emscripten:$PATH"
 
 # Lua
 export LUA_PATH="$HOME/git/lua_code_tool/?.lua;;"
+
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/ost/.local/bin:$PATH"
+
+
+export PATH="$HOME/.pi/agent/npm/node_modules/.bin:$PATH"
+

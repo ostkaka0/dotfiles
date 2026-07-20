@@ -6,7 +6,7 @@ LC_ALL="en_US.UTF-8"
 LANG=en_US.UTF-8
 LC_TIME="en_US.UTF-8"
 
-readonly SRC_DIR="/home/ost"
+readonly SRC_DIRS="/home/ost/ /root/ /etc/"
 readonly DST_DIR="/mnt/LINUX_BACKUP/home_backup"
 readonly DATETIME="$(date '+%Y-%m-%d__%H_%M_%S')"
 readonly BACKUP_PATH="${DST_DIR}/${DATETIME}"
@@ -17,7 +17,7 @@ readonly WEEKDAY="${DST_DIR}/$(LC_TIME=en_US.UTF-8 date '+%a')"
 readonly MONTH="${DST_DIR}/$(LC_TIME=en_US.UTF-8 date '+%b')"
 readonly YEAR="${DST_DIR}/$(date '+%Y')"
 
-echo "SRC_DIR:     $SRC_DIR"
+echo "SRC_DIRS:     $SRC_DIRS"
 echo "DST_DIR:     $DST_DIR"
 echo "BACKUP_PATH: $BACKUP_PATH"
 echo "LATEST:      $LATEST"
@@ -32,12 +32,13 @@ if [ ! -d $DST_DIR ]; then
   exit 1
 fi
 
+# TODO: Use --relative
 #if [ -d "/mnt/LINUX_BACKUP/home_backup/TODAY/" ]; then
-    rsync -avH --delete \
+    rsync -avH --delete --relative \
     --exclude-from=/home/ost/backup_exclude.txt \
     --link-dest=${LATEST} \
     --log-file=/tmp/rsync_home_backup_log.txt \
-    $SRC_DIR/ $BACKUP_PATH
+    $SRC_DIRS $BACKUP_PATH
 #fi
 
 #rm -rf "$(readlink ${LATEST})"

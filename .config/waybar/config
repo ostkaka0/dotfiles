@@ -20,9 +20,9 @@
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "format": "{name}: {icon}",
+        "format": "{name} {icon} ",
         "persistent-workspaces": {
-            "*": 4,
+            "*": 5,
         },
         "format-icons": {
             "1": "",
@@ -32,7 +32,7 @@
             //#"5": "",
             "urgent": "",
             "focused": "",
-            "default": ""
+            "default": " " //""
         }
     },
     "hyprland/language": {
@@ -40,6 +40,7 @@
     },
     "wlr/taskbar": {
         //"icon-theme": "Newaita-dark",
+        "icon-theme": "candy-icons",
         "icon-size": 26,
         "on-click": "activate",
         "on-click-middle": "close",

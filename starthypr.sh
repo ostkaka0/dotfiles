@@ -10,5 +10,5 @@ export __GL_VRR_ALLOWED=0
 export XDG_SESSION_TYPE=wayland
 export QT_WAYLAND_DIAABLE_WINDOWDECORATIONS=1
 export SDL_VIDEODRIVER=wayland
-exec Hyprland
+exec dbus-run-session start-hyprland
 
