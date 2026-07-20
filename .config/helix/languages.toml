@@ -1,3 +1,15 @@
+[language-server.lean]
+command = "lake"
+args = ["serve"]
+
+[[language]]
+name = "lean"
+scope = "source.lean"
+file-types = ["lean"]
+roots = ["lakefile.toml", "lakefile.lean", "lean-toolchain"]
+comment-token = "--"
+language-servers = ["lean"]
+indent = { tab-width = 2, unit = "  " }
 
 [language-server]
 biome = {command="biome", args=["lsp-proxy"]}
