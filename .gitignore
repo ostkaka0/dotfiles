@@ -19,3 +19,7 @@
 /.viminfo
 /.wget-hsts
 /nohup.out
+
+# agents
+!/.pi/
+!/.agents/
