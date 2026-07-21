@@ -26,10 +26,12 @@ hl.monitor({
 ----------------
 
 hl.env("XCURSOR_SIZE", "24")
--- hl.env("LIBVA_DRIVER_NAME", "nvidia")
 hl.env("XDG_SESSION_TYPE", "wayland")
--- hl.env("GBM_BACKEND", "nvidia-drm")
--- hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+-- Keep the compositor and ordinary applications on Intel.
+hl.env("AQ_DRM_DEVICES", "/dev/dri/intel-igpu")
+hl.env("__EGL_VENDOR_LIBRARY_FILENAMES", "/usr/share/glvnd/egl_vendor.d/50_mesa.json")
+hl.env("VK_DRIVER_FILES", "/usr/share/vulkan/icd.d/intel_icd.json")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "mesa")
 hl.env("WLR_DRM_NO_ATOMIC", "1")
 
 ----------------
