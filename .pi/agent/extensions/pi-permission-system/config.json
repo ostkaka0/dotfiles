@@ -4,7 +4,11 @@
   "permission": {
     "*": "ask",
 
-    "hypa_shell": "deny",
+    "hypa_grep": "allow",
+    "hypa_read": "allow",
+    "hypa_find": "allow",
+    "hypa_ls": "allow",
+    "hypa_shell": "ask",
 
     "path": {
       "*": "allow",
